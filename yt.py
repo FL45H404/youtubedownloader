@@ -8,7 +8,7 @@ with youtube_dl.YoutubeDL() as ydl:
     url=ydl.extract_info('https://www.youtube.com/watch?v=ecP56OZ-ggU',download=False)
 #     with open('sample.json','w') as f:
 #         f.write(json.dumps(url,indent=1))
-    print(url['id'])
+    print(url['id'][0])
 # with open('sample.json','r+') as f:
 #     data=json.load(f)["formats"][0]['url']
 # #     print(data)
